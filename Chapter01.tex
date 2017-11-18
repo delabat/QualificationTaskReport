@@ -1,8 +1,17 @@
+% % % Set the style for this file:
+\pagestyle{standard}
+
+% % % Beginning of the chapter
 \chapter{Notions of infrared thermography}
 
+	% % % Set the style for the first page:
+	\thispagestyle{chapter-first-page}
+	
 	\section{Infrared radiation spectrum.}
 	
-		Infrared (IR) radiation is the energy irradiated by a surface that has a temperature above the absolute zero [1]. Within the electromagnetic spectrum, IR radiation is defined as the radiation band that spans from 0.7 $\mu$m to 1000 $\mu$m in wavelength (Figure \ref{fig1}).\\ Much of the IR spectrum, however, is not useful for Infrared thermography (IRT) due to atmospheric absorption. This absorption occurs mainly with $H_{2}O$ and $CO_{2}$ molecules as they are well known for being good heat absorbers (Figure \ref{fig2}). According to this fact, the IR wavelength range is sometimes further divided into 4 additional categories:
+		Infrared (IR) radiation is the energy irradiated by a surface that has a temperature above the absolute zero [1]. Within the electromagnetic spectrum, IR radiation is defined as the radiation band that spans from 0.7 $\mu$m to 1000 $\mu$m in wavelength (Figure \ref{fig1}).
+		
+		Much of the IR spectrum, however, is not useful for Infrared thermography (IRT) due to atmospheric absorption. This absorption occurs mainly with $H_{2}O$ and $CO_{2}$ molecules as they are well known for being good heat absorbers (Figure \ref{fig2}). According to this fact, the IR wavelength range is sometimes further divided into 4 additional categories:
 
 		\begin{enumerate}[I.]
 			\item Near-infrared (NIR) from 0.8 $\mu$m to 1.7 $\mu$m.
@@ -18,7 +27,9 @@
 			\caption{\label{fig1} Electromagnetic spectrum showing the portion corresponding to IR radiation.}
 		\end{figure}
 		
-		It is important to note that this classification is somewhat arbitrary and therefore it can change quite a bit from one author to the other but in general they remain fairly similar. Most IR sensors are designed to work in the LWIR part of the spectrum since this is the range that minimizes this absorptions.\\ In this study, as we use an IR camera sensitive only to the fourth type, we will refer to IR as the LWIR except otherwise explicitly stated.
+		It is important to note that this classification is somewhat arbitrary and therefore it can change quite a bit from one author to the other but in general they remain fairly similar. Most IR sensors are designed to work in the LWIR part of the spectrum since this is the range that minimizes this absorptions.
+		
+		In this study, as we use an IR camera sensitive only to the fourth type, we will refer to IR as the LWIR except otherwise explicitly stated.
 		
 		\begin{figure}[ht!]
 			\centering
@@ -52,6 +63,56 @@
 		\begin{equation}
 			\label{eq2}
 			\alpha + \rho + \tau = 1
+		\end{equation}
+		
+		If we regard the surface as \textit{opaque}, it means that the transmission coefficient is $\tau \equiv 0$ and then we can rewrite Equation \ref{eq2} as:	
+		
+		\begin{equation}
+			\label{eq3}
+			\alpha + \rho + \tau = 1
+		\end{equation}
+		
+	\section{Emissivity definition. Kirchhoff's law.}
+		
+		One of the most important concepts in IRT is \textit{emissivity}. Emissivity ($\varepsilon$) of a surface at a temperature $T$ for a given wavelength $\lambda$ is defined as the ratio of the emissive power of a  non-blackbody to the emissive power of a blackbody at the same temperature:
+		
+		\begin{equation}
+			\label{eq4}
+			\varepsilon(\lambda,T)=\frac{N(\lambda,T)}{N_{b}(\lambda,T)}
+		\end{equation}
+		
+		As the emissivity of a real surface typically ranges between 0 and 1, this relationship tells us that real body emits only a fraction of the thermal energy emitted by a blackbody at the same temperature (Figure \ref{fig4}). If the emissivity is constant and independent of the wavelength, the body is called a \textit{greybody}.
+		
+		\begin{figure}[ht!]
+			\centering
+			\captionsetup{justification=centering,margin=2cm}
+			\includegraphics[scale=0.45]{Figures/Chapter01/BlackAndGreybodyComparison.pdf}
+			\caption{\label{fig4} Relationship between the blackbody spectral radiation and the radiation emitted by a greybody and a selective radiator at the same temperature. It can be seen how the blackbody yields the maximum radiance at any given wavelength due to the value of $\varepsilon=1$.}
+		\end{figure}
+		
+		\bigskip
+		The emissivity of real objects, however, is not constant nor independent of the wavelength and therefore they cannot be considered greybodies. In fact, it might also depend on many other factors such as temperature and viewing angle, as we will discuss later. However, it is usually assumed that for short wavelength intervals, the emissivity can be considered as a constant. This assumption is used to treat real objects as greybodies in order to avoid the associated mathematical complications of emissivity estimation. For this reason, surface emissivities are often computed as the average of the emissivity through the wavelength interval in which the infrared sensor works. This average is also possible because the emissivity is a slow-varying function of wavelength for solid objects. However, this does not apply to other cases, such as gases or liquids.
+		
+		The blackbody, as a perfect emitter, will have an emissivity of 1 while non-blackbodies will have, as mentioned earlier, emissivity values in the range $0<\varepsilon<1$. If a blackbody is surrounded by an isothermal black enclosure of the same temperature, then in thermodynamic equilibrium, such blackbody will have to absorb 100\% of the radiation emitted by the enclosure. At the same time it will emit 100\% of its own thermal radiation since it has $\varepsilon=1$. Under those circumstances, the following relationship holds:
+		
+		\begin{equation}
+			\label{eq5}
+			\alpha \equiv \varepsilon=1
 		\end{equation}	
+		
+		This is known as the Kirchhoff's law (for the blackbody). In general for non-blackbodies, according to this law, the emissivity and absorptivity of any material are equal at any specified temperature and wavelength. Thus, we can rewrite Equation \ref{eq2} as:	
+		
+		\begin{equation}
+			\label{eq6}
+			\varepsilon + \rho + \tau = 1
+		\end{equation}	
+		
+		And for the case in which $\tau=0$, this becomes:
+		
+		\begin{equation}
+			\label{eq7}
+			\varepsilon = 1 - \rho
+		\end{equation}	
+		
 		
 			

@@ -1,18 +1,85 @@
+% % % Beginning of preamble...
 \documentclass[10pt,a4paper]{report}
+
+% % % packages to be used...
 \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-%\usepackage{lineno}
+\usepackage{lineno}
 \usepackage{subfig}
 \usepackage{caption}
 \usepackage{enumerate}
 \usepackage{graphicx}
-%\linenumbers
+\usepackage{float}
+\usepackage{array}
+\usepackage{fancyhdr}
 \usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
-\author{Yasiel Delabat}
+
+% % % Document data...
+\author{Yasiel Delabat Diaz}
+\title{}
+
+
+% % % Define the syles....
+\fancypagestyle{chapter-first-page}{
+	\fancyhf{}
+	\fancyhead[R]{\thepage}
+	\fancyhead[C]{}
+	\fancyhead[L]{}
+	\fancyfoot[R]{}
+	\fancyfoot[C]{[DRAFT]}
+	\fancyfoot[L]{}
+}
+\fancypagestyle{introduction}{
+	\fancyhf{}
+	\fancyhead[R]{}
+	\fancyhead[C]{}
+	\fancyhead[L]{Introduction}
+	\fancyfoot[R]{}
+	\fancyfoot[C]{[DRAFT]}
+	\fancyfoot[L]{}
+}
+\fancypagestyle{standard}{
+	\fancyhf{}
+	\fancyhead[R]{\thepage}
+	\fancyhead[C]{}
+	\fancyhead[L]{\nouppercase{\leftmark}}
+	\fancyfoot[R]{}
+	\fancyfoot[C]{[DRAFT]}
+	\fancyfoot[L]{}
+}
+\fancypagestyle{conclusions}{
+	\fancyhf{}
+	\fancyhead[R]{}
+	\fancyhead[C]{}
+	\fancyhead[L]{Conclusions}
+	\fancyfoot[R]{}
+	\fancyfoot[C]{[DRAFT]}
+	\fancyfoot[L]{}
+}
+\fancypagestyle{references}{
+	\fancyhf{}
+	\fancyhead[R]{}
+	\fancyhead[C]{}
+	\fancyhead[L]{References}
+	\fancyfoot[R]{}
+	\fancyfoot[C]{[DRAFT]}
+	\fancyfoot[L]{}
+}
+
+% % % Show line numbers (for DRAFT version)
+\linenumbers
+
+% % % New table columns alignment option:
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+% % % Beginning of document...
 \begin{document}
+
+	% % % Add the different parts here...
 	\input{Introduction}
 	\clearpage
 	
