@@ -2,12 +2,12 @@
 \pagestyle{standard}
 
 % % % Beginning of the chapter
-\chapter{Experimental setup}
+\chapter{Experimental setup}\label{chapter2}
 
 	% % % Set the style for the first page:
 	\thispagestyle{chapter-first-page}
 	
-	\section{Custom Thermal Chamber.}
+	\section{Custom Thermal Chamber.}\label{section2.1}
 	
 		For the infrared measurements, the thermomechanical petal prototype was placed inside a customised thermal chamber where, on one extreme, the Petal is installed in its support (Figure 2.1 left) and on the opposite extreme the IR camera is mounted in a mobile platform that can move in X and Y coordinates thanks to an Arduino controlled Gantry System (Figure 2.1 right). Temperature and relative humidity (RH) inside the chamber can be monitored using three SHT21 sensors coupled to a Raspberry Pi.
 		
@@ -16,12 +16,12 @@
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.25]{Figures/Chapter02/ChamberBack.pdf}
 			\includegraphics[scale=0.26]{Figures/Chapter02/CamberFront.pdf}
-			\caption{\label{fig5} Image of both ends of the thermal chamber showing the Petal already in place and the IR camera also in position.}
+			\caption{Image of both ends of the thermal chamber showing the Petal already in place and the IR camera also in position.}\label{fig5}
 		\end{figure}
 		
 		The use of the chamber has two main advantages: on one hand, it provides shielding for the object under investigation against external heat sources such as ceiling lamps, computers and other electronic devices used in the setup; on the other hand, it is used as an enclosure where we can flush nitrogen in order to reduce the moisture and in doing so also reduce the potential absorption of IR radiation in the air path from the target to the IR camera.
 		
-	\section{IR camera.}
+	\section{IR camera.}\label{section2.2}
 	
 		For this study a VarioCAM High Resolution (hr) IR camera from InfraTec GmbH was used (Figure \ref{fig6}). The VarioCAM \textregistered hr is a thermographic system for the long wave infrared spectral range (LWIR) of (7.5 - 14) $\mu$m. The lens images the object scene onto a microbolometer array at a resolution of (640 x 480) pixels. The electrical signal of the detector arrays is further processed by the internal electronics. The electronics contains all the functions necessary for camera operation, such as activation of the microbolometer array, A/D conversion, offset and gain correction, defective pixel treatment, video and PC interfaces [6].
 		
@@ -30,12 +30,12 @@
   				\centering
   				\captionsetup{justification=centering, margin=0.5cm}
   				\includegraphics[scale=0.3]{Figures/Chapter02/PictureOfIRCamera.pdf}
-  				\captionof{figure}{\label{fig6} VarioCAM \textregistered hr (640 x 480 pixels) IR camera  from InfraTec \textcopyright GmbH.}
+  				\captionof{figure}{VarioCAM \textregistered hr (640 x 480 pixels) IR camera  from InfraTec \textcopyright GmbH.}\label{fig6}
     		\end{minipage}
     		\begin{minipage}[b]{0.7\linewidth}
     			\centering
   				\captionsetup{justification=raggedright}
-        		\caption{\label{tab1} VArioCam hr technical data.}
+        		\caption{VArioCam hr technical data.}\label{tab1}
 				\begin{tabular}{p{0.35\linewidth}p{0.35\linewidth}}\hline
 					\textbf{Temperature measuring range} & (-40 ... 1.200) $^{\circ}C$, optional $>$ 2.000 $^{\circ}C$ \\ \hline 
 					\textbf{Temperature resolution @ 30 $^{\circ}C$} &  better than 0.08 K, up to 0.05 K (premium mode) \\ \hline
@@ -57,12 +57,12 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.35]{Figures/Chapter02/IRBISimage.pdf}
-			\caption{\label{fig7} Screenshot of the camera’s control software IRBIS \textregistered 3.1.}
+			\caption{Screenshot of the camera’s control software IRBIS \textregistered 3.1.}\label{fig7}
 		\end{figure}
 
 		It is important to point out the fact that the software does not gives us the “real” temperature values but rather an “apparent” one. We refer to this temperatures reported by the IR software as apparent temperatures since it's necessary later on to correct them due to emissivity, reflectivity and other effects that provoque deviations in what the IR sensor perceives as temperature (See Chapter 3).
 		
-	\section{Thermo Mechanical Petal.}
+	\section{Thermo Mechanical Petal.}\label{section2.3}
 	
 		The petal structure is the frame where the end-cap sensors are mounted. It provides the mechanical and electronic structural support and also contains a titanium alloy cooling pipe for evaporative $CO_{2}$ cooling. For the Phase-II ATLAS upgrade new Petal designs are still under development. However, in this study a thermomechanical prototype manually assembled is used, equipped with dummy electronics parts, blank silicon wafers and mechanical components to be a thermal equivalent to the final structure (Figure \ref{fig8}). As the petal's design is still being improved, our prototype became quickly “obsolete”. In fact, some key materials for IR studies in the current prototype such as the silicon wafers are not very IR friendly because of their high transmissivity. This makes really difficult the employment of non-contact temperature measuring methods (See Chapter 3). In contrast, newer silicon wafers are available which are not transmissive due to a metallic finish in one of their sides, in that cases, even though the emissivity of silicon is hard to estimate, more robust IR studies can be performed.
 		
@@ -70,7 +70,7 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.35]{Figures/Chapter02/PetalConstruction.pdf}
-			\caption{\label{fig8} Thermomechanical prototype of the Petal used in the IR measurements.}
+			\caption{Thermomechanical prototype of the Petal used in the IR measurements.}\label{fig8}
 		\end{figure}
 		
 		The petal prototype is composed by 6 modules named R0 (closest to the beamline in the radial direction), R1, R2, R3, R4 and R5 (Figure \ref{fig9}). Each module contains, in general, the following components:
@@ -95,10 +95,10 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.35]{Figures/Chapter02/PetalDesign.pdf}
-			\caption{\label{fig9} Design of the petal showing the 6 different modules.}
+			\caption{Design of the petal showing the 6 different modules.}\label{fig9}
 		\end{figure}
 		
-	\section{Setup configuration.}
+	\section{Setup configuration.}\label{section2.4}
 	
 		In this study the results of two thermal cycles performed using the setup described below are considered, corresponding to both sides of the Petal and measured with the latest experimental configuration. In the following, this will be referred to as “cycle 2” (unpolished side) and “cycle 9” (polished side) in allusion to the dates in which the measurements began (August 2nd and August 9th, 2017). 
 		In order to perform the IR measurements, the TM Petal prototype is placed in the thermal chamber as shown in Figure \ref{fig5} (left) and the IR camera is positioned in such a way that it faces the Petal with an angle (Figure \ref{fig10}). This is done in order to avoid the Narcissus effect which is basically the heat from the camera itself being reflected back and measured.
@@ -108,7 +108,7 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.35]{Figures/Chapter02/NarcissusEffect.pdf}
-			\caption{\label{fig10} The IR camera is placed at some angle with respect to the plane of the petal to avoid Narcissus effect.}
+			\caption{The IR camera is placed at some angle with respect to the plane of the petal to avoid Narcissus effect.}\label{fig10}
 		\end{figure}
 		
 		Further improvements came from experiences of preliminary tests when we realized that, for example, the heat from the Gantry system was being reflected on the Petal's surface and registered by the IR camera. Then, a curtain from an opaque black fabric was placed between the Petal and the Gantry system (leaving a small gap for the camera lens) to suppress this effect (Figure \ref{fig11} right). In addition, other improvements to the chamber's insulation were made to better control the ambient conditions inside at lower temperatures and also to avoid the loss of nitrogen during the tests (Figure \ref{fig11} left). This is particularly important for an accurate estimation of the apparent reflected temperature (See section 3.1.1). In addition, the DC-DC converters in modules R2 and R3 were covered with 3D-printed caps and black tape due to the fact that their heat created a “halo” of hot air around them that strongly interfered with the IR measurements of that area of the Petal (Figure \ref{fig12} left).
@@ -118,34 +118,34 @@
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.18]{Figures/Chapter02/ExperimentalSetup.pdf}
 			\includegraphics[scale=0.215]{Figures/Chapter02/BlackCurtine.pdf}
-			\caption{\label{fig11} Experimental setup used for the Petal's thermal cycles.}
+			\caption{Experimental setup used for the Petal's thermal cycles.}\label{fig11}
 		\end{figure}
 		
 		For cooling the Petal the Transportable Refrigeration Apparatus for $CO_{2}$ Investigation (TRACI) was used (Red box in Figure \ref{fig11} left). By controlling the $CO_{2}$ pressure in the experiment we were able to adjust the desired temperature working point. Using this method temperatures of near -25 $^{\circ}C$ were reached. Table \ref{tab2} shows the nominal temperature output of the $CO_{2}$ for any given pressure set point.
 		
 		\begin{table}[ht!]
 			\captionsetup{justification=raggedright}
-        	\caption{\label{tab2} Relation between pressure and temperature for $CO_{2}$.}
+        	\caption{Relation between pressure and temperature for $CO_{2}$.}\label{tab2}
         	\centering
 			\begin{tabular}{||P{0.14\linewidth}|P{0.14\linewidth}||P{0.14\linewidth}|P{0.14\linewidth}||P{0.14\linewidth}|P{0.14\linewidth}||} \hline\hline
-				\textbf{Pressure (bar)} & \textbf{Temperature ($^{\circ}C$)} & \textbf{Pressure (bar)} & \textbf{Temperature ($^{\circ}C$)} & \textbf{Pressure (bar)} & \textbf{Temperature ($^{\circ}C$)} \\ \hline\hline
-				10 & -40.1 & 27 & -9.3 & 44 & 9.1 \\
-				11 & -37.5 & 28 & -8   & 45 & 10 \\
-				12 &  & 29 &  & 46 &  \\ 
-				13 &  & 30 &  & 47 &  \\
-				14 &  & 31 &  & 48 &  \\
-				15 &  & 32 &  & 49 &  \\
-				16 &  & 33 &  & 50 &  \\
-				17 &  & 34 &  & 51 &  \\
-				18 &  & 35 &  & 52 &  \\
-				19 &  & 36 &  & 53 &  \\
-				20 &  & 37 &  & 54 &  \\
-				21 &  & 38 &  & 55 &  \\
-				22 &  & 39 &  & 56 &  \\
-				23 &  & 40 &  & 57 &  \\
-				24 &  & 41 &  & 58 &  \\
-				25 &  & 42 &  & 59 &  \\
-				26 &  & 43 &  & 60 &  \\ \hline\hline
+				\textbf{Pressure (bar)} & \textbf{Temperature ($^{\circ}C$)} & \textbf{Pressure (bar) (cont.)} & \textbf{Temperature ($^{\circ}C$) (cont.)} & \textbf{Pressure (bar) (cont.)} & \textbf{Temperature ($^{\circ}C$) (cont.)} \\ \hline\hline
+				10 & -40.1 & 27 & -9.3 & 44 &  9.1 \\
+				11 & -37.5 & 28 & -8.0 & 45 & 10.0 \\
+				12 & -35.1 & 29 & -6.8 & 46 & 10.9 \\ 
+				13 & -32.8 & 30 & -5.6 & 47 & 11.7 \\
+				14 & -30.6 & 31 & -4.4 & 48 & 12.6 \\
+				15 & -28.5 & 32 & -3.2 & 49 & 13.5 \\
+				16 & -26.6 & 33 & -2.0 & 50 & 14.3 \\
+				17 & -24.7 & 34 & -0.9 & 51 & 15.1 \\
+				18 & -22.9 & 35 &  0.2 & 52 & 15.9 \\
+				19 & -21.2 & 36 &  1.2 & 53 & 16.7 \\
+				20 & -19.5 & 37 &  2.3 & 54 & 17.5 \\
+				21 & -17.9 & 38 &  3.3 & 55 & 18.3 \\
+				22 & -16.4 & 39 &  4.3 & 56 & 19.0 \\
+				23 & -14.9 & 40 &  5.3 & 57 & 19.8 \\
+				24 & -13.4 & 41 &  6.3 & 58 & 20.5 \\
+				25 & -12.0 & 42 &  7.2 & 59 & 21.3 \\
+				26 & -10.7 & 43 &  8.2 & 60 & 22.0 \\ \hline\hline
 			\end{tabular}
 		\end{table}
 		
@@ -156,14 +156,14 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.35]{Figures/Chapter02/CloseUpOnTheDCDCcapAndPT100.pdf}
-			\caption{\label{fig12} Unpolished side of the Petal showing the DC-DC covers (left) and the 2 additional thermocouples attached to R3 module (right).}
+			\caption{Unpolished side of the Petal showing the DC-DC covers (left) and the 2 additional thermocouples attached to R3 module (right).}\label{fig12}
 		\end{figure}
 		
 		\begin{figure}[H]
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.3]{Figures/Chapter02/petal_polished_in_chamber_zoomed.pdf}
-			\caption{\label{fig13} Polished side of the Petal ready for the thermal test. The additional PT100 thermocouples placed at each module (except R2) are visible (white cables).}
+			\caption{Polished side of the Petal ready for the thermal test. The additional PT100 thermocouples placed at each module (except R2) are visible (white cables).}\label{fig13}
 		\end{figure}
 
 		

@@ -2,12 +2,12 @@
 \pagestyle{standard}
 
 % % % Beginning of the chapter
-\chapter{Notions of infrared thermography}
+\chapter{Notions of infrared thermography}\label{chapter1}
 
 	% % % Set the style for the first page:
 	\thispagestyle{chapter-first-page}
 	
-	\section{Infrared radiation spectrum.}
+	\section{Infrared radiation spectrum.}\label{section1.1}
 	
 		Infrared (IR) radiation is the energy irradiated by a surface that has a temperature above the absolute zero [1]. Within the electromagnetic spectrum, IR radiation is defined as the radiation band that spans from 0.7 $\mu$m to 1000 $\mu$m in wavelength (Figure \ref{fig1}).
 		
@@ -24,7 +24,7 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.75]{Figures/Chapter01/lightspectrum}
-			\caption{\label{fig1} Electromagnetic spectrum showing the portion corresponding to IR radiation.}
+			\caption{Electromagnetic spectrum showing the portion corresponding to IR radiation.}\label{fig1}
 		\end{figure}
 		
 		It is important to note that this classification is somewhat arbitrary and therefore it can change quite a bit from one author to the other but in general they remain fairly similar. Most IR sensors are designed to work in the LWIR part of the spectrum since this is the range that minimizes this absorptions.
@@ -35,15 +35,14 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.45]{Figures/Chapter01/Transmission.pdf}
-			\caption{\label{fig2} A typical atmospheric transmittance plot  for infrared radiation. For some of the minima we can see the absorbing molecule responsible,}
+			\caption{A typical atmospheric transmittance plot  for infrared radiation. For some of the minima we can see the absorbing molecule responsible.}\label{fig2}
 		\end{figure}
 		
-	\section{Plank's law for blackbodies. IR radiation dissipation.}
+	\section{Plank's law for blackbodies. IR radiation dissipation.}\label{section1.2}
 	
 		According to Plank's law, the IR emissive power of a blackbody at a temperature $T$, with a wavelength between $\lambda$ and $\lambda+d\lambda$ is given by equation (\ref{eq1}), where $C_{1}$ and $C_{2}$ are constants, often called first and second radiation constants respectively [2].
 		
-		\begin{equation}
-			\label{eq1}
+		\begin{equation}\label{eq1}
 			N_{b}(\lambda,T)d\lambda=\frac{C_{1} \cdot \lambda^{-5}}{\exp (\frac{C_{2}}{\lambda\cdot T}) -1} d\lambda
 		\end{equation}
 		
@@ -55,29 +54,26 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.45]{Figures/Chapter01/PlankFunction.pdf}
-			\caption{\label{fig3} Planck's law: electromagnetic radiation emitted by a blackbody in thermal equilibrium at a definite  temperature. (a) Objects with a high temperature emit most of the radiation in the middle wave infrared; (b) Objects with a low temperature emit most of the radiation in the long wave infrared. The two parts of the graph are scaled differently on the y-axis.}
+			\caption{Planck's law: electromagnetic radiation emitted by a blackbody in thermal equilibrium at a definite  temperature. (a) Objects with a high temperature emit most of the radiation in the middle wave infrared; (b) Objects with a low temperature emit most of the radiation in the long wave infrared. The two parts of the graph are scaled differently on the y-axis.}\label{fig3}
 		\end{figure}		
 		
 		These three parameters are, in general, wavelength dependent and their sum must be one at any given wavelength and surface temperature:
 		
-		\begin{equation}
-			\label{eq2}
+		\begin{equation}\label{eq2}
 			\alpha + \rho + \tau = 1
 		\end{equation}
 		
 		If we regard the surface as \textit{opaque}, it means that the transmission coefficient is $\tau \equiv 0$ and then we can rewrite Equation \ref{eq2} as:	
 		
-		\begin{equation}
-			\label{eq3}
+		\begin{equation}\label{eq3}
 			\alpha + \rho + \tau = 1
 		\end{equation}
 		
-	\section{Emissivity definition. Kirchhoff's law.}
+	\section{Emissivity definition. Kirchhoff's law.}\label{section1.3}
 		
 		One of the most important concepts in IRT is \textit{emissivity}. Emissivity ($\varepsilon$) of a surface at a temperature $T$ for a given wavelength $\lambda$ is defined as the ratio of the emissive power of a  non-blackbody to the emissive power of a blackbody at the same temperature:
 		
-		\begin{equation}
-			\label{eq4}
+		\begin{equation}\label{eq4}
 			\varepsilon(\lambda,T)=\frac{N(\lambda,T)}{N_{b}(\lambda,T)}
 		\end{equation}
 		
@@ -87,7 +83,7 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.45]{Figures/Chapter01/BlackAndGreybodyComparison.pdf}
-			\caption{\label{fig4} Relationship between the blackbody spectral radiation and the radiation emitted by a greybody and a selective radiator at the same temperature. It can be seen how the blackbody yields the maximum radiance at any given wavelength due to the value of $\varepsilon=1$.}
+			\caption{Relationship between the blackbody spectral radiation and the radiation emitted by a greybody and a selective radiator at the same temperature. It can be seen how the blackbody yields the maximum radiance at any given wavelength due to the value of $\varepsilon=1$.}\label{fig4}
 		\end{figure}
 		
 		\bigskip
@@ -95,22 +91,19 @@
 		
 		The blackbody, as a perfect emitter, will have an emissivity of 1 while non-blackbodies will have, as mentioned earlier, emissivity values in the range $0<\varepsilon<1$. If a blackbody is surrounded by an isothermal black enclosure of the same temperature, then in thermodynamic equilibrium, such blackbody will have to absorb 100\% of the radiation emitted by the enclosure. At the same time it will emit 100\% of its own thermal radiation since it has $\varepsilon=1$. Under those circumstances, the following relationship holds:
 		
-		\begin{equation}
-			\label{eq5}
+		\begin{equation}\label{eq5}
 			\alpha \equiv \varepsilon=1
 		\end{equation}	
 		
 		This is known as the Kirchhoff's law (for the blackbody). In general for non-blackbodies, according to this law, the emissivity and absorptivity of any material are equal at any specified temperature and wavelength. Thus, we can rewrite Equation \ref{eq2} as:	
 		
-		\begin{equation}
-			\label{eq6}
+		\begin{equation}\label{eq6}
 			\varepsilon + \rho + \tau = 1
 		\end{equation}	
 		
 		And for the case in which $\tau=0$, this becomes:
 		
-		\begin{equation}
-			\label{eq7}
+		\begin{equation}\label{eq7}
 			\varepsilon = 1 - \rho
 		\end{equation}	
 		

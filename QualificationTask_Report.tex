@@ -16,59 +16,18 @@
 \usepackage{float}
 \usepackage{array}
 \usepackage{fancyhdr}
+\usepackage{datetime}
+\usepackage{nameref}
 \usepackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
+
+% % % Additional tex files to include:
+\include{StylesDefinitions}
 
 % % % Document data...
 \author{Yasiel Delabat Diaz}
-\title{}
-
-
-% % % Define the syles....
-\fancypagestyle{chapter-first-page}{
-	\fancyhf{}
-	\fancyhead[R]{\thepage}
-	\fancyhead[C]{}
-	\fancyhead[L]{}
-	\fancyfoot[R]{}
-	\fancyfoot[C]{[DRAFT]}
-	\fancyfoot[L]{}
-}
-\fancypagestyle{introduction}{
-	\fancyhf{}
-	\fancyhead[R]{}
-	\fancyhead[C]{}
-	\fancyhead[L]{Introduction}
-	\fancyfoot[R]{}
-	\fancyfoot[C]{[DRAFT]}
-	\fancyfoot[L]{}
-}
-\fancypagestyle{standard}{
-	\fancyhf{}
-	\fancyhead[R]{\thepage}
-	\fancyhead[C]{}
-	\fancyhead[L]{\nouppercase{\leftmark}}
-	\fancyfoot[R]{}
-	\fancyfoot[C]{[DRAFT]}
-	\fancyfoot[L]{}
-}
-\fancypagestyle{conclusions}{
-	\fancyhf{}
-	\fancyhead[R]{}
-	\fancyhead[C]{}
-	\fancyhead[L]{Conclusions}
-	\fancyfoot[R]{}
-	\fancyfoot[C]{[DRAFT]}
-	\fancyfoot[L]{}
-}
-\fancypagestyle{references}{
-	\fancyhf{}
-	\fancyhead[R]{}
-	\fancyhead[C]{}
-	\fancyhead[L]{References}
-	\fancyfoot[R]{}
-	\fancyfoot[C]{[DRAFT]}
-	\fancyfoot[L]{}
-}
+\title{This is the Title...}
+\newcommand{\draft}{DRAFT}
+\newcommand{\version}{v0.0}
 
 % % % Show line numbers (for DRAFT version)
 \linenumbers
@@ -76,10 +35,27 @@
 % % % New table columns alignment option:
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
+% % % new command to repeat a character N times:
+\makeatletter
+\newcount\my@repeat@count
+\newcommand{\myrepeat}[2]{%
+  \begingroup
+  \my@repeat@count=\z@
+  \@whilenum\my@repeat@count<#1\do{#2\advance\my@repeat@count\@ne}%
+  \endgroup
+}
+\makeatother
+
 % % % Beginning of document...
 \begin{document}
 
+	% % % Maketitle
+	\maketitle
+	
 	% % % Add the different parts here...
+	\input{TableOfContent}
+	\clearpage
+	
 	\input{Introduction}
 	\clearpage
 	
