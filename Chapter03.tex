@@ -95,7 +95,9 @@
 	
 		This method, however, presents an associated difficulty: if the baseline is at room temperature, it means that we can not use Equation \ref{eq1.16} directly to obtain emissivity but, instead, we can use it iteratively to estimate emissivity to some degree of accuracy. Of course this makes even worse the errors in the estimation of emissivity but it’s the price to pay for not touching the petal. The other important disadvantage is that, in order to be able to extrapolate the values of emissivity calculated on the baseline image to other thermograms we must be sure that the camera does not move from one to the other, otherwise the pixels won’t match anymore and the emissivity values would not be valid.
 		
-		Finally, we have also assumed that the emissivity does not depend on the surface temperature under the graybody approximation, which is not true in general. However, except for the case of selective emitters, emissivity is a very slowly-variating function of the surface’s temperature.\bigskip
+		Finally, we have also assumed that the emissivity does not depend on the surface temperature under the graybody approximation, which is not true in general. However, except for the case of selective emitters, emissivity is a very slowly-variating function of the surface’s temperature.
+		
+		The fact that the dummy silicon sensors in the front (polished) side of the petal are highly transmissive (See Chapter \ref{chapter4})\footnote{This automatically invalidates Equation \ref{eq1.16} since transmission was ruled out in its derivation}, together with the aforementioned difficulties, made it impossible for us to use this emissivity correction method for the present study. Instead, the "zebra" petal approach, using the IRBIS set of ROI markers on the black tape strips was used for obtaining comparable results to FEA simulations.\bigskip
 		
 	\section{Viewing angle influence.}\label{section3.4}
 	
