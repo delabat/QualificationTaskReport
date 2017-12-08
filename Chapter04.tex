@@ -37,28 +37,29 @@
 		
 	\section{Comparison with FEA results.}\label{section4.2}	
 	
-		In order to compare the results with FEA simulations, the IR camera temperature measurements from ROI markers on the surface of the black tape strips was used. Figure \ref{fig4.2} shows the lowest point thermogram for cycle 2 where the tiny red squares are the IRBIS measurement markers. Using linear interpolation between the marker points we were able to produce an isotherm map of the sensors as shown in figure \ref{fig4.3}(top). Figure \ref{fig4.3} (bottom) shows the corresponding FEA simulation results \ref{ref14}.
+		In order to compare the results with FEA simulations, the IR camera temperature measurements from ROI markers on the surface of the black tape strips was used. Figure \ref{fig4.2} (top two) shows the lowest point thermograms for cycles 2 and 9 where the tiny red squares are the IRBIS measurement markers. Using linear interpolation between the marker points corresponding to the black tape measurements we were able to produce an isotherm map of the sensors as shown in figure \ref{fig4.2}(bottom two). Figure \ref{fig4.3} shows the corresponding FEA simulation results \ref{ref14} for both cycle 2 (top) and cycle 9 (bottom).
 		
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
-			\includegraphics[scale=0.39]{Figures/Chapter04/thermo_Temp_20170803154926.jpg}
-			\caption{Thermogram of the lowest setpoint in cycle 2 showing the IRBIS measurement areas (markers) defined on the black tape (red squares) and the corresponding silicon surface ones (blue squares).}\label{fig4.2}
+			\includegraphics[scale=0.39]{Figures/Chapter04/thermo_Temp_20170803154926.pdf}
+			\includegraphics[scale=0.39]{Figures/Chapter04/thermo_Temp_201708101118_avg.pdf}
+			\includegraphics[scale=0.39]{Figures/Chapter04/thermogram_markers_2_201711271001.pdf}
+			\includegraphics[scale=0.39]{Figures/Chapter04/thermogram_markers_9_201711271006.pdf}
+			\caption{Thermogram of the lowest setpoint in cycle 2 (top left) and cycle 9 (top right) showing the IRBIS measurement areas (markers) defined on the black tape (red squares) and the corresponding silicon surface ones (blue squares). The linear interpolation isotherms for the sensors are shown in the two bottom images.}\label{fig4.2}
 		\end{figure}
-	
-		Before discussing the differences between the images in Figure \ref{fig4.3}, we must say that this is to some extent an unfair comparison. While in FEA one have access to virtually every temperature point we are limited here by the number of markers and their uncertainty. Furthermore, the characteristics of the FEA model are not exactly compatible (e.g. power board thickness, cooling loop) and the very complicated convection/absorption with the air surrounding the Petal is very hard to model. In fact, we know that the values of temperature reported by the markers near the R3 electronics (hottest point) is greatly influenced by the “halo” surrounding it, as discussed in Section \ref{section2.4}. In addition, in that precise region of the image, the linear interpolation tries to figure out a large area where there is no experimental point and thus, this area should not be very well described.
 		
-		In general (without paying too much attention to the temperature magnitudes), some similar features can be found between the experimental results and the FEA model, specially to the left side of the Petal (R4 and R5).
+		Before discussing the differences between the images in Figure \ref{fig4.3}, we must say that this is to some extent an unfair comparison. While in FEA one have access to virtually every temperature point we are limited here by the number of markers and their uncertainty. Furthermore, the characteristics of the FEA model are not exactly compatible (e.g. power board thickness, cooling loop) and the very complicated convection/absorption with the air surrounding the Petal is very hard to model. In fact, we know that the values of temperature reported by the markers near the R3 electronics (hottest point) is greatly influenced by the “halo” surrounding it, as discussed in Section \ref{section2.4}. In addition, in that precise region of the image, the linear interpolation tries to figure out a large area where there is no experimental point and thus, this area should not be very well described.
 		
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=0cm}
-			\includegraphics[scale=0.39]{Figures/Chapter04/thermogram_markers_2_201711271001.pdf}
-			\includegraphics[scale=0.39]{Figures/Chapter04/thermogram_markers_9_201711271006.pdf}
 			\includegraphics[scale=0.045]{Figures/Chapter04/FEA_thermogram_markers_2_201711271001.jpg}
 			\includegraphics[scale=0.045]{Figures/Chapter04/FEA_thermogram_markers_9_201711271006.jpg}
-			\caption{Temperature profiles for the silicon sensors of the unpolished side of the Petal. (Top): experimental IR measurements results. (Bottom): FEA simulation.}\label{fig4.3}
+			\caption{FEA simulations results for cycles 2 (top) and cycle 9 (bottom). The displayed temperatures correspond to the petal silicon sensors.}\label{fig4.3}
 		\end{figure}	
+		
+		In general (without paying too much attention to the temperature magnitudes), some similar features can be found between the experimental results and the FEA model. For instance, the hot spot at the corner of R5 is well reproduced in the FEA model for both cycles. Additionally, the cold region corresponding to the path of the cooling pipe is quite similar. However, in places like R3 near the DC-DC converters, where the hottest point is expected to be, the agreement between IR measurements and simulations is worst due to the lack of experimental points in that area for a good linear interpolation.
 	
 	\section{Silicon emissivity estimation.}\label{section4.3}	
 	
