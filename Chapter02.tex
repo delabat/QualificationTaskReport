@@ -7,16 +7,16 @@
 	% % % Set the style for the first page:
 	\thispagestyle{chapter-first-page}
 	
-	\section{Thermo Mechanical Petal}\label{section2.1}
+	\section{Thermo-mechanical Petal}\label{section2.1}
 	
-		Petals are the main component of the two ATLAS end-cap strip detectors which are composed of 6 discs, each with 32 petals (Figure \ref{fig2.1} left). The petal structure is the frame where the end-cap sensors are mounted. It provides the mechanical and electronic structural support and also contains a titanium alloy cooling pipe for evaporative $CO_{2}$ cooling. Each petal holds 6 (silicon) sensors (Figure \ref{fig2.1} right). For the Phase-II ATLAS upgrade new Petal design is still under development. However, in this study a manually assembled thermomechanical prototype is used, equipped with dummy electronics parts, blank silicon wafers and mechanical components to be a thermal equivalent to the final structure. As the petal’s design is still being improved, our prototype became quickly “obsolete”. In fact, some key materials for IR studies in the current prototype such as the silicon wafers are not very IR friendly because of their high transmissivity. This makes really difficult the employment of noncontact temperature measuring methods (See Chapter \ref{chapter3}). In contrast, newer silicon wafers are available which are not transmissive due to a metallic finish in one of their sides. In that cases, even though the emissivity of silicon is still hard to estimate, more robust IR studies can be performed.
+		Both ATLAS ITk strip end-caps (Figure \ref{fig2.1} left) are composed by 6 disks which individually can hold 32 other local support structures called petals (Figure \ref{fig2.1} right). The petal structure is the frame where the end-cap sensors are mounted. It provides the mechanical support needed by the sensors as well as the electronics and cooling services. Each petal holds 9 sensors (Figure \ref{fig2.1} right). For the ATLAS Phase-II upgrade new Petal design is still under development. However, in this study a thermo-mechanical prototype build partially by hand is used, equipped with dummy electronics modules, blank silicon wafers and mechanical components to be a thermal equivalent to the final structure. As the petal’s design is still being improved, our prototype became quickly “obsolete”. In fact, some key materials for IR studies in the current prototype such as the silicon wafers are not very IR friendly because of their high transmissivity. This makes really difficult the employment of non-contact temperature measuring methods (See Chapter \ref{chapter3}). In contrast, newer silicon wafers are available which are not transmissive.
 				
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.25]{Figures/Chapter02/EndCap.jpg}
 			\includegraphics[scale=0.26]{Figures/Chapter02/PetalDesign.jpg}
-			\caption{ATLAS strip detector end-cap showing petal structures (left) and  design of the petal showing the 6 different modules (right). The module names R[X] stands for “Ring [X]”.}\label{fig2.1}
+			\caption{ATLAS strip detector end-cap (left) showing petal structures and a schematic view of the petal showing the 6 different modules (right).}\label{fig2.1}
 		\end{figure}
 		
 		The 6 petal modules are named R0 (closest to the beamline in the radial direction), R1, R2, R3, R4 and R5 . Each module contains, in general, the following components:
@@ -35,7 +35,7 @@
 			\item In the case of R0 module: v0 assembly tools, real hybrids, glass ASICs.
 		\end{itemize}
 		
-		In addition, the prototype counts with real cores (bus tape, honeycomb, Ti V-shaped cooling pipe), real copper power traces, dummy data-lines, and a dummy EoS (not present initially but recently installed) per side (Figure \ref{fig2.2}).
+		In addition, the prototype core was built using real materials with respect to preliminary petal designs (bus tape, honeycomb, Ti V-shaped cooling pipe), real copper power traces, dummy data-lines, and a dummy EoS (not present initially but recently installed) per side. Some of the above mentioned components can be seen in the Figure \ref{fig2.2}.
 		
 		\begin{figure}[ht!]
 			\centering
@@ -46,7 +46,7 @@
 		
 	\section{Custom Thermal Chamber. }\label{section2.2}
 	
-		For the infrared measurements, the thermomechanical petal prototype was placed inside a customised thermal chamber where, on one end, the petal is installed in its support (Figure \ref{fig2.3} left) and on the opposite end the IR camera is mounted on a mobile platform that can move horizontally and vertically thanks to an Arduino controlled Gantry System (Figure \ref{fig2.3} right). Temperature and relative humidity (RH) inside the chamber are monitored using three SHT21 sensors connected  to a Raspberry Pi. 
+		For the infrared measurements, the thermomechanical petal prototype was placed inside a customised thermal chamber where, on one end, the petal is vertically inserted in a custom rail system (Figure \ref{fig2.3} left) and on the opposite end the IR camera is mounted on a mobile platform that can move horizontally and vertically thanks to an Arduino controlled Gantry System (Figure \ref{fig2.3} right). Temperature and relative humidity (RH) inside the chamber are monitored using three SHT21 sensors connected  to a Raspberry Pi. 
 		
 		\begin{figure}[ht!]
 			\centering
@@ -56,8 +56,8 @@
 			\caption{Image of both ends of the thermal chamber showing the Petal already in place and the IR camera also in position.}\label{fig2.3}
 		\end{figure}
 		
-		The use of the chamber has two main advantages: on one hand, it provides shielding for the object under investigation against external heat sources such as ceiling lamps, computers and other electronic devices used in the setup; on the other hand, it is used as an enclosure where we can flush nitrogen in order to reduce the moisture and in doing so preventing condensation from ambient air on the cooled sensors, which would irreversibly damage the prototype. Low RH comes with the additional bonus of reducing the potential absorption of IR radiation in the air path from the target to the IR camera as discussed in Section \ref{section1.1}.
-		In order to perform the IR measurements and avoid registering the heat from the camera that is reflected back by the petal surface\footnote{{\footnotesize This is known as Narcissus effect and it is an important source of background for the IR measurements if it’s not properly handled.}}, the IR camera is positioned in the chamber in such a way that it faces the Petal with an angle (Figure \ref{fig2.4}).	
+		The use of the chamber has two main advantages: first, it provides shielding for the object under investigation against external heat sources such as ceiling lamps, computers and other electronic devices used in the setup; second, it is used as an enclosure where we can flush nitrogen in order to reduce the moisture and in doing so preventing condensation from ambient air on the cooled sensors, which would irreversibly damage the prototype. Low RH comes with the additional bonus of reducing the potential absorption of IR radiation in the air path from the target to the IR camera as discussed in Section \ref{section1.1}.
+		In order to perform the IR measurements and avoid registering the heat from the camera that is reflected back by the petal surface\footnote{{\footnotesize This is known as Narcissus effect and it is an important source of background for the IR measurements if it’s not properly handled.}}, the IR camera is positioned in the chamber in such a way that it faces the Petal with an angle of incidence (Figure \ref{fig2.4}).	
 		
 		\begin{figure}[ht!]
 			\centering
@@ -96,7 +96,7 @@
 		
 		The camera’s accuracy for temperature measurement (reported by manufacturer) is $\pm 1.5 K$ in the range from 0\space$^\circ C$ to 100\space$^\circ C$ and $\pm2$\% anywhere outside that range. Some additional technical data is presented in Table \ref{tab2.1}.
 		
-		The data acquisition is performed using the VarioCam hr control software IRBIS $\textregistered$ professional v3.1 (Figure \ref{fig2.6}). Each image is computed as an average of 100 acquisitions regularly taken during five seconds in order to reduce uncertainty due to pixels noise. All thermograms are recorded in units of absolute temperature ($K$) and emissive power ($W/m^2$) for further offline analysis.
+		The data acquisition is performed using the VarioCam hr control software IRBIS $\textregistered$ professional v3.1 (Figure \ref{fig2.6}). Each image is computed as an average of 100 acquisitions regularly taken during five seconds in order to reduce uncertainty due to pixels noise. All thermograms are recorded in units of absolute temperature (K) and emissive power ($W/m^2$) for further offline analysis.
 		
 		\begin{figure}[ht!]
 			\centering
@@ -109,7 +109,7 @@
 	
 		In this study, two thermal cycles performed using the setup described below are considered, corresponding to both sides of the Petal and measured with the latest experimental configuration. In the following, this will be referred to as “cycle 2” (unpolished side) and “cycle 9” (polished side) in allusion to the dates in which the measurements began (August 2nd and August 9th, 2017). 
 		
-		Much of the improvements of the experimental setup came from experiences of preliminary tests when we realized that, for example, the heat from the Gantry system was being reflected on the Petal’s surface and registered by the IR camera. Thus, a curtain from an opaque black fabric was placed between the Petal and the Gantry system (leaving a small hole for the camera lens) to suppress this effect (Figure \ref{fig2.7} right). In addition, other improvements to the chamber’s insulation were made to better control the ambient conditions inside at lower temperatures (Figure \ref{fig2.7} left). 
+		Much of the improvements of the experimental setup came from experiences of preliminary tests when we realized that, for example, the heat from the Gantry system was being reflected on the Petal’s surface and registered by the IR camera. Thus, a curtain from an IR opaque black fabric was placed between the Petal and the Gantry system (leaving a small hole for the camera lens) to suppress this effect (Figure \ref{fig2.7} right). In addition, other improvements to the chamber’s insulation were made to better control the ambient conditions inside at lower temperatures (Figure \ref{fig2.7} left). 
 	
 		\begin{figure}[ht!]
 			\centering
@@ -119,9 +119,9 @@
 			\caption{Experimental setup used for the Petal’s thermal cycles. Right: a view of the chamber with new insulation, laptop for data acquisition, power supplies and Keithley (next to the laptop) and TRACI (Red box). Left: black curtain installation.}\label{fig2.7}
 		\end{figure}
 	
-		This is particularly important for an accurate estimation of the apparent reflected temperature (See Section \ref{section3.1}). In addition, the DC-DC converters in modules R2 and R3 were covered with 3D-printed caps and black tape due to the fact that their heat created a “halo” of hot air (Figure \ref{fig2.8} right) around them that strongly interfered with the IR measurements of that area of the Petal (Figure \ref{fig2.8} left).
+		This is particularly important for an accurate estimation of the apparent reflected temperature (See Section \ref{section3.1}). In addition, the DC-DC converters in modules R2 and R3 were covered with 3D-printed caps and black tape due to the fact that their heat created a “halo” of hot air (Figure \ref{fig2.8} right) around them that blurred the thermograms of that area of the Petal (Figure \ref{fig2.8} left).
 		
-		For cooling the Petal the \textit{Transportable Refrigeration Apparatus for $CO_{2}$ Investigation} (TRACI) Version 2 (100W) with Lewa pump was used (Figure \ref{fig2.7} left). This was the first time that we used $CO_{2}$ cooling in our set up. Previously, a water-glycol chiller was used, which greatly limited the lowest temperature that we were able to reach.
+		For cooling the Petal the \textit{Transportable Refrigeration Apparatus for CO$_{2}$ Investigation} (TRACI) Version 2 (100W) with Lewa pump was used (Figure \ref{fig2.7} left). This was the first time that a themo-mechanical petal prototype was cooled down using by-phase CO$_{2}$ in our set up. Previously, a water-glycol chiller was used, which greatly limited the lowest temperature that we were able to reach.
 	
 		\begin{figure}[ht!]
 			\centering
@@ -131,13 +131,13 @@
 			\caption{Unpolished side of the Petal showing the DC-DC covers (left) and the thermogram where that “halo” of hot air around them is visible inside the circle (right).}\label{fig2.8}
 		\end{figure}
 	
-		By controlling the $CO_{2}$ pressure in the experiment we were able to adjust the desired temperature working point. Using this method temperatures of near -25\space$^\circ C$ were reached.
+		By controlling the CO$_{2}$ pressure in the experiment we were able to adjust the desired temperature working point. Using this method temperatures of near -25\space$^{\circ}$C were reached.
 		
-		The petal is equipped with four dummy circuits simulating the heat emitted by the readout electronics (2 Module Electronics + 2 EoS). An important aspect for the prototype operation is that the modules in  each side of the petal should have a constant power consumption ($\sim 24W$). The EoS should dissipate 3W. To power each side of the Petal and both EoS two TTICPX400 power supply units were used. The modules voltage is set to 10.5V and the current to 2.5A. In the case of the EoS the current is set to 1.0A (for both sides) and the voltage to 3V. However, as the resistance of the circuit changes with temperature we had to vary the voltage accordingly to keep the 3W of power consumption constant. For cycle 2 we did it manually but for cycle 9, as part of the Summer Student program, the student involved in the IR project was able to automatize the process by creating a program that automatically varied the voltage input to keep a steady 3W power consumption \ref{ref10}.
+		The petal is equipped with 9 dummy circuits simulating the heat emitted by the readout electronics (6 module electronics + 1 EoS) per side. An important aspect for the prototype operation is that the powerboards should have a constant power consumption of $\sim$25W and the EoS $\sim$3W in each side of the petal. To power each side's powerboards and both EoS two TTICPX400 power supply units were used. The modules voltage is set to 10.5V and the current to 2.5A. In the case of the EoS the current is set to 1.0A (for both sides) and the voltage to 3V. However, as the resistance of the circuit changes with temperature we had to vary the voltage accordingly to keep the 3W of power consumption constant. For cycle 2 we did it manually but for cycle 9, as part of the Summer Student program, the student involved in the IR project was able to automatize the process by creating a program that automatically varied the voltage input to keep a steady 3W power consumption \ref{ref10}.
 		
-		In addition, a Keithley 2700 multimeter was used to register the readings from additional PT100 thermocouples using 4 wire sensing and some other important TRACI parameters like, for example, $CO_{2}$ flow, $CO_{2}$ temperature before experiment (petal), $CO_{2}$ temperature after experiment, pressure setpoint and pressure of the $CO_{2}$ in the experiment. Especially, for safety measures, the difference between the pressure setpoint and the pressure in the experiment was maintained around 10 bar.
+		In addition, a Keithley 2700 multimeter was used to register the readings from additional PT100 thermocouples using 4 wire sensing and some other important TRACI parameters like, for example, CO$_{2}$ flow, CO$_{2}$ temperature before experiment (petal), CO$_{2}$ temperature after experiment, pressure setpoint and pressure of the CO$_{2}$ in the experiment.
 		
-		The additional thermocouples were placed as follows (for cycle 2): 2 on the inlet/outlet pipes (glued), 2 in R3 module silicon surface (not glued): 1 between the ASICs and 1 in the corner next to R4 (Figure \ref{fig2.9} top). For cycle 9 four extra thermocouples were placed in R0, R1, R4 and R5 as shown in Figure \ref{fig2.9} (bottom).
+		The additional thermocouples were placed as follows (for cycle 2): 2 on the inlet/outlet pipes (glued), 2 in R3 module silicon surface (maintained by a piece of high emissivity black tape): 1 between the ASICs and 1 in the corner next to R4 (Figure \ref{fig2.9} top). For cycle 9 four extra thermocouples were placed in R0, R1, R4 and R5 as shown in Figure \ref{fig2.9} (bottom).
 		
 		\begin{figure}[H]
 			\centering

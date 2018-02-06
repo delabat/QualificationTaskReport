@@ -81,17 +81,18 @@
 			\varepsilon(\lambda,T)=\frac{N(\lambda,T)}{N_{b}(\lambda,T)}
 		\end{equation}\bigskip
 		
-		Here $N(\lambda,T)$ is the emissive power of the non-black body object. Being an idealized representation, the blackbody will have the maximum possible emissivity value of 1 (perfect emitter), while any other real surface will have emissivity values in the range $0 < \varepsilon < 1$. Thus, Equation \ref{eq1.4} tells us that real body emits only a fraction of the thermal energy that would be emitted by a blackbody at the same temperature (Figure \ref{fig1.4}). If the emissivity is constant and independent of the wavelength, the body is called a \textit{greybody}.
+		Here $N(\lambda,T)$ is the emissive power of the non-black body object. Being an idealized representation, the blackbody will have the maximum possible emissivity value of 1 (perfect emitter), while any other real surface will have emissivity values in the range $0 < \varepsilon < 1$. Thus, Equation \ref{eq1.4} tells us that real body emits only a fraction of the thermal energy that would be emitted by a blackbody at the same temperature (Figure \ref{fig1.4}). If the emissivity is constant and independent of the wavelength, the body is called a \textit{graybody}.
 		
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
-			\includegraphics[scale=0.4]{Figures/Chapter01/BlackAndGreybodyComparison.jpg}
-			\caption{Relationship between the blackbody spectral radiation, the radiation emitted by a grey body and a selective radiator at the same temperature. It can be seen how the blackbody yields the maximum radiance at any given wavelength.}\label{fig1.4}
+			\includegraphics[scale=0.177]{Figures/Chapter01/BlackAndGreybodyComparison02.jpg}
+			\includegraphics[scale=0.28]{Figures/Chapter01/BlackAndGreybodyComparison01.jpg}
+			\caption{Relationship between the blackbody spectral radiation, the radiation emitted by a graybody and a selective radiator at the same temperature. (a) By definition, emissivity of the blackbody is 1 while other non-idealized surfaces have emissivities between 0 and 1. (b) It can be seen how the blackbody yields the maximum radiance at any given wavelength.}\label{fig1.4}
 		\end{figure}
 		
 		\bigskip
-		The emissivity of real objects, however, varies with respect to wavelength and therefore they cannot be considered grey bodies. In fact, it might also depend on many other factors such as temperature and viewing angle, as we will discuss later. However, it is usually assumed that for short wavelength intervals, the emissivity can be considered constant. This assumption is used to treat real objects as grey bodies in order to avoid the associated mathematical complications of emissivity estimation. For this reason, surface emissivities are often computed as the average of the emissivity through the wavelength interval in which the infrared sensor works. This average is also possible because the emissivity is a slow-varying function of wavelength for solid objects. However, this does not apply to other cases, such as gases or liquids.
+		The emissivity of real objects, however, varies with respect to wavelength and therefore they cannot be considered graybodies. In fact, it might also depend on many other factors such as temperature and viewing angle, as we will discuss later. However, it is usually assumed that for short wavelength intervals, the emissivity can be considered constant. This assumption is used to treat real objects as graybodies in order to avoid the associated mathematical complications of emissivity estimation. For this reason, surface emissivities are often computed as the average of the emissivity through the wavelength interval in which the infrared sensor works. This average is also possible because the emissivity is a slow-varying function of wavelength for solid objects. However, this does not apply to other cases, such as gases or liquids.
 		
 		A good illustration of the effect of emissivity in the measurement of the real temperature of a surface is presented in Figure \ref{fig1.5}. This corresponds to the so-called Leslie’s Cube. Even though this cube is filled with hot water and all the faces are at the same temperature we can see a huge difference in the temperature measured by the IR sensor. This is due to the difference in emissivity of the two front faces. One is painted with a high emissivity black (could be any color) paint and therefore the apparent temperature is closer to the real temperature of the water, while the other face has low emissivity (very reflective) and the apparent temperature is almost entirely due to the reflected component (see the heat from the hand reflected in the surface).
 		
@@ -211,7 +212,9 @@
 		\end{equation}\bigskip
 		
 		$R(\xi)$ can also be treated as a constant scale factor ($R$) which only depends on the IR sensor (See results in Section \ref{section4.4}).
-		Even though we can assume emissivity as a constant that only depends on the specific material of the surface under investigation, in general, it also depends on the viewing angle of the camera with respect to the normal of the surface. blackbodies behave like perfect isotropically diffuse emitters, that is, for any surface emitting radiation, the radiance of the emitted radiation is independent of the direction into which it is emitted \ref{ref8}. However, real surfaces, in addition to the lower emission rate (given by lower emissivity) also show angular dependence in the emissive power (Figure \ref{fig1.7} left).
+		
+		Even though we can assume emissivity as a constant that only depends on the specific material of the surface under investigation, in general, it also depends on the viewing angle of the camera with respect to the normal of the surface. 
+		Blackbodies behave like perfect isotropically diffuse emitters, that is, for any surface emitting radiation, the radiance\footnote{{\footnotesize The term \textit{radiance} refers to the amount of IR radiation emitted, transmitted or reflected by a surface per unit of area and solid angle. Therefore it is a \textit{directional} quantity. Should not be confused with \textit{irradiance} which is the corresponding non-directional magnitude.}} of the emitted radiation is independent of the direction into which it is emitted \ref{ref8}. However, real surfaces, in addition to the lower emission rate (given by lower emissivity) also show angular dependence in the radiance (Figure \ref{fig1.7} left).
 		
 		\begin{figure}[ht!]
 			\centering
@@ -220,5 +223,6 @@
 			\caption{Schematics of the angular dependence of the emissive power of a surface in relation to the blackbody.}\label{fig1.7}
 		\end{figure}
 		
+		Furthermore, the emitted intensity (which is defined as the integral of the radiance over the solid angle) also depends on the viewing angle between the IR camera and the surface's normal through the definition of the surface's unit of area. By construction, this area is the projection of the surfaces's unit of area into the plane perpendicular to the direction of emission (Figure \ref{fig1.7} right). As a result, for an angle of 90$^circ$ with respect to the normal of the surface the intensity will be minimal while for a viewing angle of 0$^circ$ will be maximal. As shown in the figure, this is purely a geometrical factor.
 		Depending on the surface, the intensity of the emitted radiation can be approximated with a cosine law with good approximation. However, in general, this is not the case, and in most cases a study must be carried out to estimate the angular dependence of the emissivity.
 		
