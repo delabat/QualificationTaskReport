@@ -7,37 +7,38 @@
 	% % % Set the style for the first page:
 	\thispagestyle{chapter-first-page}
 
-	\section{Petal thermal cycles.}\label{section4.1}
+	\section{IR tests of the thermo-mechanical petal prototype.}\label{section4.1}
 	
-		For both thermal cycles the set points were selected by varying the CO$_{2}$ pressure in such a way that we go from room temperature to the lowest possible temperature and back to room temperature in steps of 5\space$^{\circ}$C. Then, at each set point, the following data is recorded:
+		For both thermal tests (one per side of the petal) the CO$_{2}$ pressure is varied in such a way that we go from room temperature to the lowest possible temperature and back again to room temperature in steps of 5\space$^{\circ}$C. After waiting long enough (~5 min) for the CO$_{2}$ pressure to stabilize at each set-point, the following data is recorded:
 	
 		\begin{enumerate}[label={\arabic*)}]
-			\item Inlet/outlet pipes temperatures (PT100).
+			\item Inlet/outlet pipes temperatures (using resistance thermometers - PT100).
 			\item Temperature readings (PT100) on the silicon surface at each module (See Figure \ref{fig2.9}).
 			\item CO$_{2}$ flow.
 			\item Temperature of the CO$_{2}$ going in/out of the petal.
-			\item Pressure of the CO$_{2}$ going into the petal and the difference to the pressure setpoint.
+			\item Pressure of the CO$_{2}$ going into the petal and the difference to the pressure set-point.
 			\item Ambient temperature and RH inside the chamber.
 			\item Voltage/current readings from the power supply units.
 		\end{enumerate}
 	
-		Also, the Petal thermograms are recorded following the method described in Section \ref{section2.3} at each step. The results are shown in Figure \ref{fig4.1} for both cycles 2 and 9. Uncertainties of the IR measurements have not been included not to overload the plots but, as discussed also in Section \ref{section2.3}, the main source of uncertainty comes from the IR camera itself. 
+		Also, the petal thermograms are recorded at each step following the method described in Section \ref{section2.3} at each step. Figure \ref{fig4.1} shows the cooling down and warming up profile of both sides of the petal. The measurements were taken at some selected places as indicated in the figure. Uncertainties of the IR measurements have not been included not to overload the plots but, as discussed also in Section \ref{section2.3}, the main source of uncertainty comes from the IR camera itself. 
 	
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=0cm}
 			\includegraphics[scale=0.45]{Figures/Chapter04/unwrapped_cycle_2_201711121522.pdf}
 			\includegraphics[scale=0.45]{Figures/Chapter04/unwrapped_cycle_9_201711121522.pdf}
-			\caption{Temperature plots for the thermal cycles corresponding to the polished (front) and unpolished (back) sides. The dots represent set points with the Petal not powered and the lines correspond to set points with both sides of the petal powered. Solid lines and filled dots represent black tape readings with the IR camera (except CO$_{2}$ entering/leaving petal) and dashed lines and hollow dots represent thermocouple values.}\label{fig4.1}
+			\caption{Temperature profiles for the thermal tests corresponding to the unpolished (front) and polished (back) sides. The dots represent set-points where the petal was not powered and the lines correspond to set-points with both sides of the petal powered. Solid lines and filled dots represent black tape readings with the IR camera (except CO$_{2}$ entering/leaving petal, given by the TRACI system) and dashed lines and hollow dots represent thermocouple values.}\label{fig4.1}
 		\end{figure}
 	
-		As it can be seen, with cycle 2 (cycle 9) we were able to reach temperatures of around -18\space$^{\circ}$C (-20\space$^{\circ}$C). For both cycles it is also notable that the returning CO$_{2}$ is colder, which is consistent with dual-phase cooling. We can also see that the PT100 thermocouple sensors report consistently higher temperatures that the TRACI sensors for both inlet and outlet pipes. Either we lost some cooling power due to thermal conductivity of the pipes, which is expected, or one of the sensors got incorrectly calibrated/placed. This situation is the opposite in cycle 9 with the inlet fluid temperature readings. In fact, for cycle 9, the inlet PT100 accidentally broke and had to be reglued which might explain the difference from one cycle to the other in the inlet pipe while the outlet remained somewhat the same. This indicates that a correct manipulation of the thermocouple sensors is crucial to obtain good reliability on the measurements.
+		As it can be seen, with the unpolished (polished) side test we were able to reach temperatures of around -18\space$^{\circ}$C (-20\space$^{\circ}$C). For both tests it is also notable that the returning CO$_{2}$ is colder, which is consistent with dual-phase cooling. We can also see that the PT100 thermocouple sensors report consistently higher temperatures than the TRACI sensors for both inlet and outlet pipes. This means that either we lost some cooling power due to thermal conductivity of the pipes, which is expected, or one of the sensors got incorrectly calibrated/placed. This situation is the opposite in the back side test with the inlet fluid temperature readings. In fact, for this test, the inlet PT100 accidentally broke and had to be re-glued, which might explain the difference from one test to the other in the inlet pipe while the outlet remained somewhat the same. This indicates that a correct manipulation of the thermocouple sensors is crucial to obtain good reliability on the measurements.
 		
-		Another interesting test that we wanted to perform was the comparison between the temperature reported by the IR camera using the black tape method and the temperature measured with an alternative method on the same surface (e.g. using PT100 thermocouples). In order to perform such a test, the additional PT100 sensors placed on the silicon surface were hold in position using the same high emissivity black tape used for the strips of the “Zebra” Petal. For cycle 2 only two PT100s were used, as described in Section \ref{section2.4} while for cycle 9 four additional ones were placed. From Figure \ref{fig4.1} (top) we can see that the readings of the thermocouple and the IR camera are quite different for the sensor placed between the ASICs, possibly due to miss-contact with the silicon surface (the sensors had to be placed very carefully not to damage the silicon). The other PT100 sensor, on the other hand, shows relatively good agreement with the IR camera measurement. The situation in cycle 9 improved a bit more, in general, for the lowest setpoint, specially in the R0, R3(border) and R4, even though there are still large discrepancies (e.g. R5). With this results we also see that the tendency of the sensors is to not having memory (i.e. they are not damaged) after the thermal cycles, which was one of the main concerns that motivated the thermal tests.\bigskip
+		Another interesting test that was performed is the comparison between the temperature reported by the IR camera using the black tape method and the temperature measured with an alternative method on the same surface (e.g. using PT100 thermocouples). In order to perform such a test, the additional PT100 sensors placed on the silicon surface were hold in position using the same high emissivity black tape used for the strips of the “Zebra” petal. For the front side test only two PT100s were used, as described in Section \ref{section2.4} while for the back side test four additional ones were placed. From Figure \ref{fig4.1} (top) we can see that the readings of the thermocouple and the IR camera are quite different for the sensor placed between the ASICs, possibly due to bad contact with the silicon surface (the sensors had to be placed very carefully not to damage the silicon). The other PT100 sensor, on the other hand, shows relatively good agreement with the IR camera measurement. The situation in the front side test improved a bit more, in general, for the lowest temperature set-point, specially in the R0, R3 (border) and R4, even though there are still large discrepancies (e.g. R5). As shown in the figure, all the profiles are quite symmetrical with respect to the lowest temperature point. However, it is also visible how most of the selected measurement points return to slightly lower temperature values than the initial ones. That does not necessarily means that the Silicon sensors are damaged after the tests, but instead, the TRACI system is the one that could remain altered in some way, specially since it is the CO$_{2}$ pressure the determining parameter in the temperature set-point.
+		In any case, in order to properly determine how Silicon sensors respond to temperature changes, a more dedicated study involving several thermal cycles should be made. That is in fact one of the projected tests that the petal will have to go through in the future.\bigskip
 		
 	\section{Comparison with FEA results.}\label{section4.2}	
 	
-		In order to compare the results with FEA simulations, the IR camera temperature measurements from ROI markers on the surface of the black tape strips was used. Figure \ref{fig4.2} (top two) shows the lowest point thermograms for cycles 2 and 9 where the tiny red squares are the IRBIS measurement markers. Using linear interpolation between the marker points corresponding to the black tape measurements we were able to produce an isotherm map of the sensors as shown in figure \ref{fig4.2}(bottom two). Figure \ref{fig4.3} shows the corresponding FEA simulation results \ref{ref15} for both cycle 2 (top) and cycle 9 (bottom).
+		In order to compare the measured temperature values of the silicon sensors with the ones given by the FEA simulations, the black tape method was applied using IR camera readings from the black tape strips. Figure \ref{fig4.2} (top two) shows the thermograms at the lowest temperature achieved for the front and back side tests respectively. The tiny red squares correspond to the IRBIS measurement markers. Using linear interpolation in between each marker point corresponding to the black tape measurements, we were able to produce an isotherm map of the sensors as shown in figure \ref{fig4.2} (bottom two). Figure \ref{fig4.3} shows the corresponding FEA simulation results \ref{ref15} for both front side (top) and back side (bottom) tests.
 		
 		\begin{figure}[ht!]
 			\centering
@@ -46,41 +47,43 @@
 			\includegraphics[scale=0.39]{Figures/Chapter04/thermo_Temp_201708101118_avg.pdf}
 			\includegraphics[scale=0.39]{Figures/Chapter04/thermogram_markers_2_201711271001.pdf}
 			\includegraphics[scale=0.39]{Figures/Chapter04/thermogram_markers_9_201711271006.pdf}
-			\caption{Thermogram of the lowest setpoint in cycle 2 (top left) and cycle 9 (top right) showing the IRBIS measurement areas (markers) defined on the black tape (red squares) and the corresponding silicon surface ones (blue squares). The linear interpolation isotherms for the sensors are shown in the two bottom images.}\label{fig4.2}
+			\caption{Thermogram of the lowest temperature set-point in the front side test (top left) and back side test (top right) showing the IRBIS measurement areas (markers) defined on the black tape (red squares) and the corresponding silicon surface ones (blue squares). Isotherm contours shown in the two bottom images are drawn using a linear interpolation between each markers.}\label{fig4.2}
 		\end{figure}
 		
-		Before discussing the differences between the images in Figure \ref{fig4.3}, we must say that this is to some extent an unfair comparison. While in FEA one have access to virtually every temperature point we are limited here by the number of markers and their uncertainty. Furthermore, the characteristics of the FEA model are not exactly compatible (e.g. power board thickness, cooling loop) and the very complicated convection/absorption with the air surrounding the Petal is very hard to model. In fact, we know that the values of temperature reported by the markers near the R3 electronics (hottest point) is greatly influenced by the “halo” surrounding it, as discussed in Section \ref{section2.4}. In addition, in that precise region of the image, the linear interpolation tries to figure out a large area where there is no experimental point and thus, this area should not be very well described.
+		Before discussing the differences between the images in Figure \ref{fig4.3}, we must say that this is to some extent an unfair comparison. While in FEA one have access to virtually every temperature point we are limited here by the number of markers and their uncertainty. Furthermore, the characteristics of the FEA model are not exactly compatible (e.g. power board thickness, cooling loop) and the thermal convection of the air surrounding the petal is very hard to model and is not accounted for in the FEA simulations. In fact, we know that the values of temperature reported by the markers near the R3 electronics (hottest point) is greatly influenced by the “halo” surrounding it, as discussed in Section \ref{section2.4}. In addition, in that precise region of the image, the linear interpolation tries to connect to distant measurement zones with no experimental point in between and thus, this area should not be very well described.
 		
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=0cm}
 			\includegraphics[scale=0.045]{Figures/Chapter04/FEA_thermogram_markers_2_201711271001.jpg}
 			\includegraphics[scale=0.045]{Figures/Chapter04/FEA_thermogram_markers_9_201711271006.jpg}
-			\caption{FEA simulations results for cycles 2 (top) and cycle 9 (bottom). The displayed temperatures correspond to the petal silicon sensors.}\label{fig4.3}
+			\caption{FEA simulations results for front side (top) and back side (bottom) thermal tests. The displayed temperatures correspond to the petal silicon sensors.}\label{fig4.3}
 		\end{figure}	
 		
-		In general (without paying too much attention to the temperature magnitudes), some similar features can be found between the experimental results and the FEA model. For instance, the hot spot at the corner of R5 is well reproduced in the FEA model for both cycles. Additionally, the cold region corresponding to the path of the cooling pipe is quite similar. However, in places like R3 near the DC-DC converters, where the hottest point is expected to be, the agreement between IR measurements and simulations is worst due to the lack of experimental points in that area for a good linear interpolation.
+		In general (without paying too much attention to the temperature magnitudes), some similar features can be found between the experimental results and the FEA model. For instance, the hot spot at the corner of R5 is well reproduced in the FEA model for both the front and the back side of the petal. Additionally, the cold region corresponding to the path of the cooling pipe is quite similar. However, in places like R3 near the DC-DC converters, where the hottest point is expected to be, the agreement between IR measurements and simulations is worst due to the lack of experimental points in that area for a good linear interpolation.
 	
 	\section{Silicon emissivity estimation.}\label{section4.3}	
 	
-		As shown in the previous section, one of the factors affecting the robustness of the measurements is the lack of “resolution” by using the black tape method, even though more than 560 markers were created (by hand) on the surface of the silicon sensors. This asks for more refined ways to measure the temperature of the silicon sensors. Furthermore, the black tape method is a quite invasive technique to use with the current prototype and for sure something to avoid during quality control with real Petals.
+		As shown in the previous section, one of the factors affecting the robustness of the measurements is the lack of “resolution” by using the black tape method, even though more than 560 markers were created (by hand) on the surface of the silicon sensors. This asks for more refined ways to measure the temperature of the silicon sensors. Furthermore, the black tape method is a quite invasive technique to use with the current prototype and for sure something to avoid during quality control with real petals.
 		
-		A good first approach would be to try to estimate the silicon emissivity and then use this value to correct globally the IR image. As mentioned in Section \ref{section3.3}, a “relative” method using the black tape markers measurements as temperature reference can be used to calculate the emissivity of the silicon next to them employing Equation \ref{eq3.3}. The IRBIS software also has an emissivity calculator which reports the emissivity of a given pixel if we provide the real temperature of the pixel and the ambient temperature (apparent reflected temperature). However, as this variant is more like a black box to us, we decided to use both methods and compare the results. As mentioned also in Section \ref{section3.3}, Equation \ref{eq3.3} will only work for opaque surfaces (not transmissive) and for surface temperatures well away from the apparent reflected temperature. For those reasons we performed this study on the unpolished side of the Petal since the polished side is highly transmissive (Figure \ref{fig4.4}).
+		A good first approach would be to try to estimate the silicon emissivity and then use this value to correct globally the IR image. As mentioned in Section \ref{section3.3}, a “relative” method using the black tape markers measurements as temperature reference can be used to calculate the emissivity of the silicon next to them employing Equation \ref{eq3.3}. The IRBIS software also has an emissivity calculator, which reports the emissivity of a given pixel if we provide the real temperature of the pixel and the ambient temperature (apparent reflected temperature). However, as the calculations made within IRBIS are not known due to software copyright, we decided to use both methods and compare the results. As mentioned also in Section \ref{section3.3}, Equation \ref{eq3.3} will only work for opaque surfaces (not transmissive) and for surface temperatures well away from the apparent reflected temperature. For those reasons we performed this study on the unpolished side of the petal since the polished side is highly transmissive (Figure \ref{fig4.4}).
 		
-		Figure \ref{fig4.5} shows a profile plot of one of the black tape strips in sensor R3 at the lowest setpoint. We can see how both silicon and black tape markers readings show two minima corresponding to the position through which the cooling pipe goes underneath the surface. It is appreciable the difference between the temperature values of black tape and silicon markers. This is mainly due to differences in emissivity: since the silicon surface has lower emissivity than black tape, the apparent temperature is higher. This apparent contradiction can be overcome if we think about it this way: since the black tape has higher emissivity, it is therefore better than the silicon at emitting the real (cold) temperature.
+		Figure \ref{fig4.5} shows a profile plot (azimuthal projection) of one of the black tape strips in sensor R3 at the lowest temperature set-point (blue points). It is also included the temperature of a second set of markers in Silicon surface (red points) right next to each black tape marker. Both sets of temperature measurements were recorded with the IR camera. 
+		We can see how both Silicon and black tape markers readings show two minima corresponding to the position through which the cooling pipe goes underneath the surface. We can also notice the large temperature difference between the Silicon and the black tape readings. This is mainly due to differences in emissivity: since the silicon surface has lower emissivity than black tape, the apparent temperature is higher. This apparent contradiction can be overcome if we think about it this way: since the black tape has higher emissivity, it is therefore better than the silicon at emitting the real (cold) temperature.
+		In addition, the Silicon surface has relatively high reflectivity, which means that the camera also collects the ART more efficiently (See section \ref{section3.1}). As the ART is close to the ambient temperature inside the chamber, this would result in an additional contribution to the higher apparent temperature displayed for the Silicon.
 		
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.35]{Figures/Chapter04/HandTransmission.jpg}
-			\caption{IR image (taken directly with the camera) of a circular piece of silicon wafer similar to the one glued on the polished side of the Petal showing the high transmissivity properties of the silicon. Behind the silicon there is a heating plate at 150\space$^{\circ}$C and in between the experimenter’s hand (we can clearly see the fingers shape through the silicon).}\label{fig4.4}
+			\caption{IR image (taken directly with the camera) of a circular piece of silicon wafer similar to the one glued on the polished side of the petal showing the high transmissivity properties of the silicon. Behind the silicon there is a heating plate at 150\space$^{\circ}$C and in between the experimenter’s hand (we can clearly see the fingers shape through the silicon).}\label{fig4.4}
 		\end{figure}
 		
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.35]{Figures/Chapter04/R3Profile_Si_and_BT.jpg}
-			\caption{Temperature profile plot of the second (middle) black tape strip in module R3 for the lowest temperature setpoint.}\label{fig4.5}
+			\caption{Temperature profile plot of the second (middle) black tape strip in module R3 for the lowest temperature set-point.}\label{fig4.5}
 		\end{figure}
 		
 		After applying Equation \ref{eq3.3} on each pair of silicon - black tape markers and using the IRBIS software emissivity calculation tool we obtained the results shown in Figure \ref{fig4.6}. As we can see the Equation \ref{eq3.3} estimations are in good agreement with the software outputs. 
@@ -96,29 +99,29 @@
 		
 	\section{IR camera spectral response scale factor.}\label{section4.4}
 	
-		Figure \ref{fig4.7} (left) shows the results of the estimation of the $R$ scale factor for the IR camera. The method used was described in Section \ref{section3.2}, however, to test the method’s validity we used as well a Petal thermogram of which we knew the real surface temperatures, that is, the powered off Petal at room temperature. Figure \ref{fig4.7} (right) shows the scale factor estimation on the Petal.
+		Figure \ref{fig4.7} (left) shows the results of the estimation of the $R$ scale factor for the IR camera. The method used was described in Section \ref{section3.2}, however, to test the method’s validity we used as well a petal thermogram of which we knew the real surface temperatures, that is, the petal at room temperature without cooling nor electronics powered on. Figure \ref{fig4.7} (right) shows the scale factor estimation on the petal.
 		
 		\begin{figure}[ht!]
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.5]{Figures/Chapter04/BucketScaleFactors.pdf}
 			\includegraphics[scale=0.5]{Figures/Chapter04/PetalScaleFactors.pdf}
-			\caption{Fits of the IR camera response scale factor calculated for different temperatures (left) and using a Petal thermogram (right).}\label{fig4.7}
+			\caption{Fits of the IR camera response scale factor calculated for different temperatures (left) and using a petal thermogram (right).}\label{fig4.7}
 		\end{figure}
 		
 		For the calculations, the values of the black tape in silicon modules R0, R1 and R2 were used, showing consistent results with the values obtained with the aluminum bucket. The uncertainty shown is the fit’s root mean squared error. With this test we corroborated that this factor is only dependent on the IR sensor/camera and independent of the temperature and the surface.\bigskip
 		
 	\section{Viewing angle influence in the measurements.}\label{section4.5}
 	
-		In order to test whether or not the viewing angle played a significant role in the IR temperature measurements, the aluminum rod described in Section \ref{section3.4} was used, filled with water at 34.6\space$^{\circ}$C. The results can be seen in Figure \ref{fig4.8}. 
+		In order to test whether or not the viewing angle plays a significant role in the IR temperature measurements, the aluminum rod described in Section \ref{section3.4} was used, filled with water at 34.6\space$^{\circ}$C. The results can be seen in Figure \ref{fig4.8}. 
 		
 		We observed that the temperature variations along the rod are within 1\space$^{\circ}$C including the error bands from an angle of 0$^\circ$ (with respect to the normal of the rod’s surface) to roughly 30$^\circ$. For the central values this difference is less than 0.2\space$^{\circ}$C. This is a relatively small variation for that angular range and even though we see a drop in the markers temperature with respect to the real temperature (measured with a thermocouple directly inside the rod) the error magnitude make us conclude that, within this uncertainty, the angle influence on the IR temperature measurements is quite negligible.
 		
-		\begin{figure}[ht!]
+		\begin{figure}[H]
 			\centering
 			\captionsetup{justification=centering,margin=0cm}
 			\includegraphics[scale=0.4]{Figures/Chapter04/RodAngularTempResults.jpg}
-			\caption{Angle study results (top) using the aluminum rod filled with water at 34.6\space$^{\circ}$C (bottom). The marker positions do not cover the entire rod since it is larger than the Petal and some portions fall out of the viewing field of the camera.}\label{fig4.8}
+			\caption{Angle study results (top) using the aluminum rod filled with water at 34.6\space$^{\circ}$C (bottom). The marker positions do not cover the entire rod since it is larger than the petal and some portions fall out of the viewing field of the camera.}\label{fig4.8}
 		\end{figure}
 	
 	

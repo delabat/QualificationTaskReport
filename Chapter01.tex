@@ -37,7 +37,7 @@
 			\caption{An example of atmospheric transmission plot for infrared radiation. For some of the minima we can see the molecule responsible for the absorption.}\label{fig1.2}
 		\end{figure}
 		
-		There are, of course, some caveats associated with the use of IRT. One of them is in fact related with its advantageous characteristic of being a non-contact technique: IR radiation has to travel some distance from the target surface to the infrared sensor passing through some media that can either let it pass almost completely or strongly attenuate it. Using vacuum would solve this particular issue but sometimes it's not possible to perform infrared measurements in vacuum. Additional complications are related with the intrinsic characteristics of the emitting material and the IR sensor's particular response to IR radiation. All these factors need to be "compensated" in order to obtain meaningful quantitative IR measurements. We will discuss the most important ones in the following sections.
+		There are, of course, some caveats associated with the use of IRT. One of them is in fact related with its advantageous characteristic of being a non-contact technique: IR radiation has to travel some distance from the target surface to the infrared sensor passing through some media that can either let it pass almost completely or strongly attenuate it. Using vacuum would solve this particular issue but sometimes it is not possible to perform infrared measurements in vacuum. Additional complications are related with the intrinsic characteristics of the emitting material and the IR sensor's particular response to IR radiation. All these factors need to be "compensated" in order to obtain meaningful quantitative IR measurements. We will discuss the most important ones in the following sections.
 		
 	\section{Plank's law for blackbodies. IR radiation dissipation.}\label{section1.2}
 	
@@ -64,13 +64,13 @@
 			\alpha + \rho + \tau = 1
 		\end{equation}\bigskip
 		
-		If we regard the surface as \textit{opaque} to the IR radiation, it means that the transmission coefficient is $\tau \equiv 0$ and then we can rewrite Equation \ref{eq1.2} as:	
+		If we regard the surface as \textit{opaque} to the IR radiation, it means that the transmission coefficient is $\tau \equiv 0$. For the rest of the report, and unless otherwise explicitly indicated, we will use the term "opaque" in reference to the surface property in the IR spectrum. Then we can rewrite Equation \ref{eq1.2} as:	
 		
 		\begin{equation}\label{eq1.3}
 			\alpha + \rho + \tau = 1
 		\end{equation}\bigskip
 		
-		In the following we will consider all surfaces as opaque for the derivation of the necessary formulae. To consider transmission (except in those cases where it is absolutely necessary) constitutes a limiting factor for the IRT accuracy since it's a difficult magnitude to estimate and the additional uncertainties that would be introduced make any quantitative IR analysis very difficult.
+		In the following we will consider all surfaces as opaque for the derivation of the necessary formulae. To consider transmission (except in those cases where it is absolutely necessary) constitutes a limiting factor for the IRT accuracy since it is a difficult magnitude to estimate and the additional uncertainties that would be introduced make any quantitative IR analysis very difficult.
 		\bigskip
 		
 	\section{Emissivity definition. Kirchhoff's law.}\label{section1.3}
@@ -124,7 +124,7 @@
 	
 	\section{IR measurements calibration.}\label{section1.4}
 	
-		Usually, when we take an IR picture of an object, at room temperature for instance, we intuitively expect the entire image to be of only one color (corresponding to the ambient temperature). However, this is rarely the case. It is important to point out the fact that the IR sensor/camera does not gives us the “real” temperature values but rather an “apparent” one. We refer to these temperatures as \textit{apparent temperatures} since it’s necessary later on to correct them due to the presence of several factors that provoque deviations in what the IR sensor perceives. The most important ones can be classified as follows:
+		Usually, when we take an IR picture of an object, at room temperature for instance, we intuitively expect the entire image to be of only one color (corresponding to the ambient temperature). However, this is rarely the case. It is important to point out the fact that the IR sensor/camera does not gives us the “real” temperature values but rather an “apparent” one. We refer to these temperatures as \textit{apparent temperatures} since it is necessary later on to correct them due to the presence of several factors that provoque deviations in what the IR sensor perceives. The most important ones can be classified as follows:
 
 		\begin{enumerate}[label={\arabic*.}]
 			\item \textbf{Intrinsic object properties}: emissivity, reflectivity, transmissivity and polishing of the surface.
@@ -132,7 +132,7 @@
 			\item \textbf{Other factors}: ambient conditions (temperature, RH), apparent reflected temperature and viewing angle of the IR camera with respect to the object.
 		\end{enumerate}
 		
-		To understand how all these factors come into play we can consider the situation depicted in Figure \ref{fig1.6}.  Let's assume that we have a target which is placed in front of a generic IR sensor. We are interested in measuring the amount of radiation coming from the target due to emission alone, since this corresponds to the only measure of the “real” temperature of our object. Using Equation \ref{eq1.4} we can estimate the amount of emitted IR radiation ($N$) as: 
+		To understand how all these factors come into play we can consider the situation depicted in Figure \ref{fig1.6}.  Let's assume that we have a target that is placed in front of a generic IR sensor. We are interested in measuring the amount of radiation coming from the target due to emission alone, since this corresponds to the only measure of the “real” temperature of our object. Using Equation \ref{eq1.4} we can estimate the amount of emitted IR radiation ($N$) as: 
 		
 		\begin{equation}\label{eq1.8}
 			N(\lambda,T)=\varepsilon(\lambda,T) \cdot N_{b}(\lambda, T)
@@ -144,7 +144,7 @@
 			\centering
 			\captionsetup{justification=centering,margin=2cm}
 			\includegraphics[scale=0.38]{Figures/Chapter01/SchematicsOfIRRadiation.jpg}
-			\caption{Schematics of the IR radiation interaction with a target surface: (A) radiation from an external source being partially absorbed by the target, (B) part of the radiation from A which is is reflected in the direction of the IR camera, (C) thermal  radiation emitted from the target and (D) external source of radiation transmitted through the target.}\label{fig1.6}
+			\caption{Schematics of the IR radiation interaction with a target surface: (A) radiation from an external source being partially absorbed by the target, (B) part of the radiation from A that is is reflected in the direction of the IR camera, (C) thermal  radiation emitted from the target and (D) external source of radiation transmitted through the target.}\label{fig1.6}
 		\end{figure}
 		
 		In addition, we will have two more contributions to the amount of IR radiation flying in the direction of the sensor. These other contributions are produced by additional sources of heat. The first is the amount of radiation coming from external heat sources that is reflected on the target surface. This contribution is given by:
@@ -179,7 +179,7 @@
 			N_{meas}(\lambda,T)=R(\lambda) \cdot N_{total}(\lambda,T)
 		\end{equation}\bigskip
 		
-		where $R(\lambda)$ is a correction scale factor introduced to account for the fact that our IR camera is sensitive only in the spectral range from 7.5 $\mu$m to 14 $\mu$m, and even in that range it’s also not 100\% sensitive to the incoming radiation. It is often called sensor’s \textit{Spectral Response Function} or sensor’s \textit{Filter Function} \ref{ref7}. Note that this factor only depends on the IR sensor’s “efficiency” for a given wavelength and it can be estimated as the ratio of the power registered by the sensor and the power calculated using Equation \ref{eq1.12}.
+		where $R(\lambda)$ is a correction scale factor introduced to account for the fact that our IR camera is sensitive only in the spectral range from 7.5 $\mu$m to 14 $\mu$m, and even in that range it is also not 100\% sensitive to the incoming radiation. It is often called sensor’s \textit{Spectral Response Function} or sensor’s \textit{Filter Function} \ref{ref7}. Note that this factor only depends on the IR sensor’s “efficiency” for a given wavelength and it can be estimated as the ratio of the power registered by the sensor and the power calculated using Equation \ref{eq1.12}.
 		
 		To obtain then the total (integrated over all wavelengths) signal processed by the IR sensor we have to integrate Equation \ref{eq1.12} over the wavelength range that our sensor is sensitive to (from $\lambda_{1}$=7.5 $\mu$m to $\lambda_{2}$=14 $\mu$m):
 		
@@ -211,10 +211,10 @@
 			I_{2}(T)=\int_{\lambda_{1}}^{\lambda_{2}} N_{b}(\lambda,T_{r}) d\lambda
 		\end{equation}\bigskip
 		
-		$R(\xi)$ can also be treated as a constant scale factor ($R$) which only depends on the IR sensor (See results in Section \ref{section4.4}).
+		$R(\xi)$ can also be treated as a constant scale factor ($R$), which only depends on the IR sensor (See results in Section \ref{section4.4}).
 		
 		Even though we can assume emissivity as a constant that only depends on the specific material of the surface under investigation, in general, it also depends on the viewing angle of the camera with respect to the normal of the surface. 
-		Blackbodies behave like perfect isotropically diffuse emitters, that is, for any surface emitting radiation, the radiance\footnote{{\footnotesize The term \textit{radiance} refers to the amount of IR radiation emitted, transmitted or reflected by a surface per unit of area and solid angle. Therefore it is a \textit{directional} quantity. Should not be confused with \textit{irradiance} which is the corresponding non-directional magnitude.}} of the emitted radiation is independent of the direction into which it is emitted \ref{ref8}. However, real surfaces, in addition to the lower emission rate (given by lower emissivity) also show angular dependence in the radiance (Figure \ref{fig1.7} left).
+		Blackbodies behave like perfect isotropically diffuse emitters, that is, for any surface emitting radiation, the radiance\footnote{{\footnotesize The term \textit{radiance} refers to the amount of IR radiation emitted, transmitted or reflected by a surface per unit of area and solid angle. Therefore it is a \textit{directional} quantity. Should not be confused with \textit{irradiance}, which is the corresponding non-directional magnitude.}} of the emitted radiation is independent of the direction into which it is emitted \ref{ref8}. However, real surfaces, in addition to the lower emission rate (given by lower emissivity) also show angular dependence in the radiance (Figure \ref{fig1.7} left).
 		
 		\begin{figure}[ht!]
 			\centering
@@ -223,6 +223,6 @@
 			\caption{Schematics of the angular dependence of the emissive power of a surface in relation to the blackbody.}\label{fig1.7}
 		\end{figure}
 		
-		Furthermore, the emitted intensity (which is defined as the integral of the radiance over the solid angle) also depends on the viewing angle between the IR camera and the surface's normal through the definition of the surface's unit of area. By construction, this area is the projection of the surfaces's unit of area into the plane perpendicular to the direction of emission (Figure \ref{fig1.7} right). As a result, for an angle of 90$^circ$ with respect to the normal of the surface the intensity will be minimal while for a viewing angle of 0$^circ$ will be maximal. As shown in the figure, this is purely a geometrical factor.
+		Furthermore, the emitted intensity, which is defined as the integral of the radiance over the solid angle, also depends on the viewing angle between the IR camera and the surface's normal through the definition of the surface's unit of area. By construction, this area is the projection of the surfaces's unit of area into the plane perpendicular to the direction of emission (Figure \ref{fig1.7} right). As a result, for an angle of 90$^circ$ with respect to the normal of the surface the intensity will be minimal while for a viewing angle of 0$^circ$ will be maximal. As shown in the figure, this is purely a geometrical factor.
 		Depending on the surface, the intensity of the emitted radiation can be approximated with a cosine law with good approximation. However, in general, this is not the case, and in most cases a study must be carried out to estimate the angular dependence of the emissivity.
 		
