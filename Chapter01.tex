@@ -9,7 +9,7 @@
 	
 	\section{Infrared Thermography. Infrared radiation spectrum.}\label{section1.1}
 	
-		Infrared thermography (IRT) is a science dedicated to the acquisition and processing of thermal information from non-contact measurement devices. Infrared measuring devices acquire infrared radiation emitted by an object and transform it into an electronic signal. As a non-contact technique, IRT has some advantages in relation to other techniques for temperature measurement. For example, the temperature of extremely hot objects or dangerous products, such as acids, can be measured safely, keeping the user out of danger. It also provides protection for the object under investigation since there is no need to attach any temperature measuring device to it, which makes it much less invasive.
+		Infrared thermography (IRT) is a discipline dedicated to the acquisition and processing of thermal information from non-contact measurement devices. Infrared measuring devices acquire infrared radiation emitted by an object and transform it into an electronic signal. As a non-contact technique, IRT has some advantages in relation to other techniques for temperature measurement. For example, the temperature of extremely hot objects or dangerous products, such as acids, can be measured safely, keeping the user out of danger. It is also a non-invasive technique, since there is no need to attach any temperature measuring device to the object under test.
 		
 		Infrared (IR) radiation is the energy irradiated by a surface that has a temperature above the absolute zero \ref{ref2}. Within the electromagnetic spectrum, IR radiation is defined as the radiation band that spans from 0.75 $\mu$m to 1000 $\mu$m in wavelength (Figure \ref{fig1.1}). Much of the IR spectrum, however, is generally avoided for IRT applications due to atmospheric absorption. This absorption occurs mainly with H$_{2}$O and CO$_{2}$ molecules as they are well known for being good heat absorbers (Figure \ref{fig1.2}). According to this fact, the IR wavelength range is sometimes further divided into 5 additional categories:
 
@@ -28,7 +28,7 @@
 			\caption{Electromagnetic spectrum showing the portion corresponding to IR radiation.}\label{fig1.1}
 		\end{figure}
 		
-		It is important to note that this classification is somewhat arbitrary and therefore can vary within literature. Most IR sensors are designed to work in the LWIR part of the spectrum since this is the range that minimizes these absorptions. In this study, as we use an IR camera sensitive only to the fourth type, we will refer to IR as the LWIR except otherwise explicitly stated.
+		It is important to note that this classification is somewhat arbitrary and therefore can vary within literature. Most IR sensors are designed to work in the LWIR part of the spectrum since this is the range that minimizes these absorptions. In this study, as we use an IR camera sensitive only to LWIR, we will refer to IR as the LWIR except otherwise explicitly stated.
 				
 		\begin{figure}[ht!]
 			\centering
@@ -37,7 +37,7 @@
 			\caption{An example of atmospheric transmission plot for infrared radiation. For some of the minima we can see the molecule responsible for the absorption.}\label{fig1.2}
 		\end{figure}
 		
-		There are, of course, some caveats associated with the use of IRT. One of them is in fact related with its advantageous characteristic of being a non-contact technique: IR radiation has to travel some distance from the target surface to the infrared sensor passing through some media that can either let it pass almost completely or strongly attenuate it. Using vacuum would solve this particular issue but sometimes it is not possible to perform infrared measurements in vacuum. Additional complications are related with the intrinsic characteristics of the emitting material and the IR sensor's particular response to IR radiation. All these factors need to be "compensated" in order to obtain meaningful quantitative IR measurements. We will discuss the most important ones in the following sections.
+		There are, of course, some caveats associated with the use of IRT. One of them is in fact related with its advantageous characteristic of being a non-contact technique: IR radiation has to travel some distance from the target surface to the infrared sensor passing through some media that can either let it pass almost completely or strongly attenuate it. Using vacuum would solve this particular issue but sometimes it is not feasible to perform infrared measurements in vacuum. Additional complications are related with the intrinsic characteristics of the emitting material and the IR sensor's particular response to IR radiation. All these factors need to be "compensated" in order to obtain meaningful quantitative IR measurements. We will discuss the most important ones in the following sections.
 		
 	\section{Plank's law for blackbodies. IR radiation dissipation.}\label{section1.2}
 	
@@ -58,7 +58,7 @@
 			\caption{Planck’s law in terms of the  monochromatic irradiance of  a blackbody in thermal equilibrium at a given temperature. (a) Objects with a high temperature emit most of the radiation in the middle wave infrared; (b) Objects with a low temperature emit most of the radiation in the long wave infrared. The two parts of the graph are scaled differently on the y-axis.}\label{fig1.3}
 		\end{figure}		
 		
-		These three parameters are, in general, wavelength dependent and their sum must be one at any given wavelength and surface temperature:
+		These three parameters are, in general, wavelength dependent and their sum must be equal to 1.0 at any given wavelength and surface temperature:
 		
 		\begin{equation}\label{eq1.2}
 			\alpha + \rho + \tau = 1
@@ -70,8 +70,7 @@
 			\alpha + \rho = 1
 		\end{equation}\bigskip
 		
-		In the following we will consider all surfaces as opaque for the derivation of the necessary formulae. To consider transmission (except in those cases where it is absolutely necessary) constitutes a limiting factor for the IRT accuracy since it is a difficult magnitude to estimate. Furthermore, the additional uncertainties that would be introduced make any quantitative IR analysis very difficult.
-		\bigskip
+		In the following we will consider all surfaces as opaque for the derivation of the necessary formulae.\bigskip
 		
 	\section{Emissivity definition. Kirchhoff's law.}\label{section1.3}
 		
